@@ -1,11 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Yuti Meher's professional portfolio showcasing projects and contact information.">
+    <meta name="keywords" content="Yuti Meher, Portfolio, Projects, Contact, Resume">
+    <meta name="author" content="Yuti Meher">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/100de18077.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Yuti Personal Portfolio</title>
 </head>
-<body>
-    
+
+
+<body class="main">
+    <!-- Header -->
+    <header>
+        <nav id="#">
+            <h1 class="logo">YutImeher</h1>
+            <div class="menu menu-open">
+                <span class="main-close">&times;</span>
+                <p><a href="#">Introduction</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#resume">Resume</a></p>
+                <p><a href="#skill">Skills</a></p>
+                <p><a href="#project">Projects</a></p>
+                <p><a href="#contact">Contact</a></p>
+                <p><button id="night-mode-toggle" onclick="toggleNightMode()">
+                        <i class="fas fa-moon" id="night-mode-icon"></i>
+                    </button>
+                </p>
+            </div>
+            <i class="ri-menu-3-line icon"></i>
+        </nav>
+    </header>
+    <main>
+        <!-- main page -->
+        <div id="main">
+
+            <!-- leftside section -->
+            <div class="leftside color">
+                <div class="card">
+                    <img src="assests/Image/YUTI.jpg" alt="yuti pic">
+                    <h1>Yuti Meher</h1>
+                    <p>Fresher Software Developer (Front-End Developer)</p>
+                    <div class="socialicon">
+                        <a href="https://github.com/ErYuti" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/yuti-meher-a26519245/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <button class="resume" type="button"><i class="ri-mail-unread-line"></i> My Resume!</i></button>
+                </div>
+            </div>
+
+            <!-- rightside section -->
+            <div class="rightside">
+
+                <!-- Information section -->
+                <div id="#info">
+                    <div class="box">
+                        <button><i class="ri-home-smile-line"></i> Introduction</button>
+                        <h1>Hello!, I'm <span>Yuti Meher!</span></h1>
+                        <h2>I'm a <span class="text-change"></span></h2>
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Fresher Software Engineer</h3>
+                    </div>
+                </div>
+
+
+                <!-- About section -->
+                <div id="about">
+                    <div class="box">
+                        <button><i class="ri-user-star-line"></i> About Me</button>
+                        <h3>Welcome to my <span>portfolio!</span></h3>
+                        <p>I am a proactive learner and a recent graduate with a passion for web development. I am eager
+                            to contribute to dynamic projects, learn from experienced professionals, acquire new skills,
+                            and enhance my abilities to achieve organizational goals as well as personal growth. I am
+                            excited about the opportunity to bring fresh perspectives and tackle challenges in the
+                            ever-evolving field of web development. I specialize in front-end development technologies.
+                        </p>
+
+                        <h3>Co-Currucular Activities</h3>
+                        <p>
+                            1. Participated in DJ strike Project 2021<br>
+                            2. Participated in State level Technical Project Competition JAN
+                            2020<br>
+                            3. Participated in Robotics Workshop 2nd & 10th Aug 2019<br>
+                            4. Participated in State level Technical Paper Presentation
+                            Competition JAN 2018
+                        </p><br>
+                        <h3>Outside of Tech</h3>
+                        <p>
+                            <i class="fa-solid fa-route"></i> I love travelling to discovering new places<br>
+                            <i class="fa-solid fa-camera"></i> Photography to capturing the beauty of nature and
+                            Freezing
+                            moments in time<br>
+                            <i class="fa-solid fa-photo-film"></i> Editing photo & video to add a personal touch to my
+                            shots
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Resume section -->
+                <div id="resume">
+                    <div class="box">
+                        <button><i class="ri-profile-line"></i> Resume</button>
+
+                        <!-- Eduction and schooling -->
+                        <h3>My <span>Education</span></h3>
+                        <h4><i class="fa-solid fa-user-graduate"></i> BTech</h4>
+                        <p style="color: #5a5a5a;">Electronics and Telecommunications Engineering<br>
+                            <span>SVKM's Dwarkadas J. Sanghvi College of Engineering in Vile Parle, Mumbai</span>
+                        </p>
+                        <p>[CGPA-8.61]</p><br>
+
+
+                        <h3><i class="fa-solid fa-building-columns"></i> Diploma</h3>
+                        <p style="color: #5a5a5a;">Electronics and Telecommunications Engineering<br><span>St. John
+                                College of Engineering and Management College in Palghar, Maharashtra</span></p>
+                        <p>[Per-92.12%]</p><br>
+
+
+
+                        <h3><i class="fa-solid fa-school"></i> SSC</h3>
+                        <p><span>Bhuvanesh Kirtane Vidyalya</span></p>
+                        <p>[Per-82.20%]</p><br>
+
+                        <!-- Intership Experiences -->
+                        <h3>My<span> experiences</span></h3>
+                        <!-- Company1 -->
+                        <h4 style="color: #5a5a5a;"><i class="fa-solid fa-code"></i> Web Development</h4>
+                        <p><span>Present</span></p><br>
+                        <p>OTET Infosystem</p>
+                        <p><i class="fa-solid fa-code"></i> As an intern working in this company, my primary task was to
+                            create an industries-based website using WordPress. The website was created for
+                            manufacturing, suppliers & exporters industries, Charity, Cleaning House, Real estate and
+                            etc.</p>
+
+                        <p><i class="fa-solid fa-code"></i> Responsively designed and developed websites using
+                            WordPress.</p>
+
+                        <p><i class="fa-solid fa-code"></i> Updated websites using HTML, CSS, and JavaScript via
+                            FileZilla.</p>
+
+                        <p><i class="fa-solid fa-code"></i> Solved problems efficiently, Gained practical knowledge, and
+                            learned
+                            new skills.</p>
+
+                        <p><i class="fa-solid fa-code"></i> Gained practical experience in web development, honing
+                            skills in HTML, CSS, JavaScript, and WordPress.</p>
+
+                        <p><i class="fa-solid fa-code"></i> Developed visually appealing and responsive web interfaces
+                            using modern web technologies, contributing to enhanced user experiences and client
+                            satisfaction.</p><br>
+
+                        <!-- Company2 -->
+                        <h3><i class="fa-solid fa-atom"></i> Trainee Engineer</h3>
+                        <p><span>Ex-Intership</span></p>
+
+                        <!-- Company3 -->
+                        <p>Adani Dahanu Thermal Power Station</p><br>
+                        <h3><i class="fa-solid fa-lightbulb"></i> Operational Trainee Engineer</h3>
+                        <p><span>Ex-Intership</span></p>
+                        <p>P.M. Electro-Auto Private Limited</p>
+                    </div>
+                </div>
+
+
+
+                <!-- Skills section -->
+                <div id="skill">
+                    <div class="box">
+                        <button><i class="ri-bubble-chart-fill"></i> My Skills</button>
+                        <h3>My <span>Advantages</span></h3>
+                        <h4><i class="fa-solid fa-desktop"></i> Web Dev - Specification</h4>
+                        <p>▪ WordPress Developer <br> ▪ Responsive Web Design & Redesign </p><br>
+
+                        <h4><i class="fa-regular fa-file-code"></i> Programming Language</h4>
+                        <div class="symbol">
+                            <i class="fa-brands fa-html5" style=" color: #ff3c00;"></i>
+                            <i class="fa-brands fa-css3-alt" style=" color: rgb(36, 141, 240);"></i>
+                            <i class="fa-brands fa-js" style="color: #faf611;"></i>
+                        </div><br>
+
+
+                        <h4><i class="fa-regular fa-file-code"></i> Frameworks</h4>
+                        <div class="symbol">
+                            <i class="fa-brands fa-wordpress" style="  color: #007490;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #7611F6;"></i>
+                            <i class="fa-brands fa-react" style="color: #08E2F9;"></i>
+                            <!-- <i class="fas fa-wind" style="color: #08E2F9;"></i> -->
+                            <p>▪ Tailwind CSS</p>
+                            
+                        </div><br>
+
+
+                        <h4><i class="fa-regular fa-file-code"></i> Version Control</h4>
+                        <div class="symbol">
+                        <i class="fa-brands fa-git-alt" style="color: #ff3c00;"></i>
+                        <i class="fa-brands fa-github" style="color: #fff"></i>
+                        </div>
+                        <!-- <p>▪ Git <br> ▪ GitHub</p><br> -->
+
+                        <h4><i class="fa-regular fa-file-code"></i> Programming Tools</h4>
+                        <p>▪ VS Code <br> ▪ Chrome DevTools</p><br>
+
+                        <h4><i class="fa-solid fa-circle-notch"></i> Continuous Learning</h4>
+                    </div>
+                </div>
+
+
+                <!-- Projects section -->
+                <div id="project">
+                    <div class="box">
+                        <button><i class="ri-gallery-view-2"></i> Project</button>
+                        <h3>My <span>Projects</span></h3>
+
+                        <p>⦿ Responsive Website Design using HTML and CSS</p><br>
+                        <div class="portcard">
+
+                            <!-- 1 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Virat Kohli.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Virat Kohli Tribute Page Design</h4>
+                                    <p>A fully responsive tribute page dedicated to Virat Kohli, built with HTML and CSS, showcasing his cricket achievements, career highlights, and personal milestones.
+                                    </p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS_Project/tree/4100a278c1fb1007151d9dded3d58e9955f5ce08/Virat%20Kohli%20Tribute%20Page" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="project-item">
+                                <video src="assests/Video/card.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Yuti Responsive Profile Card Design</h4>
+                                    <p>A responsive profile card design for Yuti, featuring modern CSS techniques and responsive layouts to showcase personal or business information elegantly on various devices.
+
+                                    </p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS_Project/tree/4100a278c1fb1007151d9dded3d58e9955f5ce08/Yuti%20Profile%20card" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Netflix Clone.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Netflix Clone - Responsive Website Design</h4>
+                                    <p>A static clone of the Netflix website using HTML and CSS, featuring a responsive layout and showcasing basic UI elements and design principles from the original Netflix interface.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS_Project/tree/4100a278c1fb1007151d9dded3d58e9955f5ce08/Netflix%20Clone" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Landing Page.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Responsive Landing Page Website Design</h4>
+                                    <p>A visually appealing and responsive landing page designed using HTML and CSS, focusing on modern design principles, user-friendly layouts, and cross-device compatibility to effectively engage visitors.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS_Project/tree/4100a278c1fb1007151d9dded3d58e9955f5ce08/Landing%20Page" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br><br>
+                        <p>⦿ Responsive Website Design using HTML CSS and JavaScript</p><br>
+                        <div class="portcard">
+
+                            <!-- 1 -->
+                            <div class="project-item">
+                                <video src="assests/Video/OnOFF.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>OnOFF Light Functionality</h4>
+                                    <p>An interactive webpage utilizing HTML, CSS, and JavaScript to simulate a switchable light functionality, demonstrating basic DOM manipulation and event handling for an engaging user experience.<p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Bulb_ON_OFF" target="_blank" class="project-link">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Counter .mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Interactive Counter</h4>
+                                    <p>An interactive counter built with HTML, CSS, and JavaScript, enabling users to increment, decrement, and reset counts dynamically. Ideal for tracking metrics or engaging user interactions on webpages.<p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Counter%20Projects" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Calculator.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Interactive Calculator</h4>
+                                    <p>A functional calculator implemented with HTML, CSS, and JavaScript, providing basic arithmetic operations like addition, subtraction, multiplication, and division. Enhances user interaction and utility on web applications.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Calculator_Project" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Insta Card.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Instagram Card</h4>
+                                    <p>A dynamic Instagram card design crafted with HTML, CSS, and JavaScript, replicating the visual layout and interactivity of an Instagram profile card, ideal for showcasing user information or social media integrations on web pages.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Instgram%20Card" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 5 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Color Picker from Image .mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Color Picker from Image</h4>
+                                    <p>A dynamic web application that allows users to extract and select colors from any uploaded image. Built with HTML, CSS, and JavaScript, this tool enhances user interaction and visual design capabilities.</p>
+                                    <a href="hthttps://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Pick%20color%20from%20image" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 6 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Todo List.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Todo List</h4>
+                                    <p>An interactive todo list application created with HTML, CSS, and JavaScript, allowing users to add, remove, and mark tasks as completed. Enhances productivity and organization on web platforms.</p>
+                                <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Todo%20List" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                    Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 7 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Meme Gen.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Random Meme Generator</h4>
+                                    <p>A fun meme generator implemented with HTML, CSS, and JavaScript, enabling users to create custom memes by adding text to predefined images. Enhances user engagement and entertainment on web platforms.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Random%20Meme%20Generator%20-%20API" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 8 -->
+                            <div class="project-item">
+                                <video src="assests/Video/QR Cde Generate and Download.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>QR Code Generator</h4>
+                                    <p>A QR code generator built with HTML, CSS, and JavaScript, allowing users to dynamically generate and download QR codes for URLs, text, or other data. Enhances convenience for sharing information digitally on web platforms.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/QR%20Code%20Generate%20and%20Download" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 9 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Web1Tailwind.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Interactive Image Cursor Effect Responsive Website</h4>
+                                    <p>This project showcases a dynamic and engaging web experience where images move with the cursor, creating an interactive visual effect. Built using HTML, CSS, and JavaScript, it demonstrates proficiency in combining front-end technologies to enhance user interaction.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/WebSite%20Project1" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                            <!-- 10 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Digital Clock.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Digital Clock</h4>
+                                    <p>A digital clock implemented with HTML, CSS, and JavaScript, displaying real-time updates and providing a clear, interactive interface for timekeeping. Enhances user experience with accurate time display on web pages.</p>
+                                    <a href="https://github.com/ErYuti/HTML-CSS-JS_Projects/tree/db6d34e00127ef33dc7da22bbc5ca7dbc9ec406e/Digital%20Clock" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+                        </div>
+                            <!-- <video src="assests/Video/Analog Clock.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Age Timer.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Guess Num.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Cricket Game.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Joke Gem.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Review.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Quote Gen.mp4" autoplay loop muted></video> -->
+                            <!-- <video src="assests/Video/Covert Text to speech.mp4" autoplay loop muted></video> -->
+
+                        <br><br><br>
+                        <p>⦿ Responsive Website Design using Bootstrap</p><br>
+                        <div class="portcard">
+                            <!-- 1 -->
+                            <div class="project-item">
+                                <video src="assests/Video/Web1 Bootstrap.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Coding Learn Responsive Website</h4>
+                                    <p>A responsive website designed with Bootstrap for learning coding, featuring structured content, interactive elements, and optimized layouts across different devices. Facilitates intuitive learning and accessibility in web development education.</p>
+                                    <a href="https://github.com/your-repohttps://github.com/ErYuti/Bootstrap-/tree/58db8b37f4ab6a8ac92b5385e695e5e1766e602e/Project1" target="_blank" class="project-link">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br><br>
+                        <p>⦿ Responsive Website Design using Tailwind</p><br>
+                        <div class="portcard">
+                            <!-- 1 -->
+                            <div class="project-item">
+                                <video src="assests/Video/The shoe.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Shoe Store Responsive Website</h4>
+                                    <p>A responsive website design for a shoe store using Tailwind CSS, focusing on modern aesthetics, mobile-first design, and enhanced user experience through seamless navigation and visually appealing product displays.</p>
+                                    <a href="https://github.com/your-repohttps://github.com/ErYuti/Tailwind-CSS-/tree/9a005a252963357bee6229c36c10ecb495ef2ea2/5Project-2" target="_blank" class="project-link">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                        Repo</a>
+                                    <!-- <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br><br>
+                        <p>⦿ Responsive Website Design WordPress</p><br>
+                        <div class="portcard">
+                             <!-- 1 -->
+                             <div class="project-item">
+                            <video src="assests/Video/Makeup-artist.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Makeup Artist Responsive Website</h4>
+                                    <p>A fully responsive website built with HTML and CSSA responsive website design for a makeup artist built with WordPress, showcasing services, portfolio, and client testimonials. Customizable and user-friendly, enhancing online presence and client engagement in the beauty industry.</p>
+                                    <!-- <a href="https://github.com/your-repo" target="_blank" class="project-link">GitHub
+                                        Repo</a>
+                                    <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+
+                             <!-- 2 -->
+                             <div class="project-item">
+                                <video src="assests/Video/Electronic Project.mp4" autoplay loop muted></video>
+                                <div class="project-info">
+                                    <h4>Electronic Projects Showcase Responsive Website</h4>
+                                    <p>A fully responsive website built with HTML and CSSA WordPress-based responsive website showcasing electronic projects, featuring detailed project descriptions, components used, and interactive media. Designed to highlight technical prowess and innovation in electronics.</p>
+                                    <!-- <a href="https://github.com/your-repo" target="_blank" class="project-link">GitHub
+                                        Repo</a>
+                                    <a href="https://your-live-project-link.com" target="_blank"
+                                        class="project-link">Live Project</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- contact section -->
+                <div id="contact">
+                    <div class="box">
+                        <button><i class="ri-contacts-book-2-fill"></i> Contact Me</button>
+                        <h3>My Personal<span> Infromation</span></h3>
+                        <div class="con">
+                            </h3>
+                            <h4><i class="fa-solid fa-envelope"></i>
+                                <p>
+                                    yutimeher@gmail.com
+                                </p>
+                            </h4>
+                            <h4><i class="ri-phone-fill"></i>
+                                <p>+91
+                                    8208375264 / 7757017001</p>
+                            </h4>
+                            <h4><i class="ri-linkedin-box-line"></i>
+                                <p>
+                                    /yuti-meher-a26519245/</p>
+                            </h4>
+                            <h4><i class="ri-github-fill"></i>
+                                <p>
+                                    github.com/ErYuti</p>
+                            </h4>
+                            <h4><i class="ri-map-pin-user-fill"></i>
+                                <p>
+                                    Mumbai, India</p>
+                            </h4>
+                        </div>
+
+                        <div class="boxform">
+                            <h3>Get in <span>Touch!</span></h3>
+                            <form class="formbox">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter Your Name...">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter Your Mail Id...">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required placeholder="Enter Your Message Here.."></textarea>
+                                <button type="submit" class="formbtn">Submit</button>
+                            </form>
+                        </div>
+                        <!-- Go to up icon -->
+                        <div class="go">
+                            <a href="#">Go to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
+<!-- Js connection link -->
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<script src="index.js"></script>
+
 </html>
