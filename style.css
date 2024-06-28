@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: black;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+  }
+  
+  nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1.2vw;
+    border-bottom: 0.2px solid #dadada;
+    background-color: black;
+    position: relative;
+  }
+  
+  nav .menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 4vw;
+    position: relative;
+    overflow: hidden;
+    padding: 1.7vw;
+    padding-left: 6vw;
+  }
+  
+  nav h1 {
+    font-family: "Roboto Serif", serif;
+    font-size: 3rem;
+    letter-spacing: 0.1vw;
+    color: #27e287;
+    padding-left: 1vw;
+    transition: transform 0.3s step-end;
+  }
+  
+  nav h1:hover {
+    transform: scale(1.1);
+  }
+  
+  nav .menu p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1vw;
+    color: #fff;
+  }
+  
+  nav .menu a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  nav .menu span {
+    display: none;
+  }
+  
+  nav .menu a:hover {
+    border-bottom: 2px solid #27e287;
+  }
+  
+  nav i {
+    display: none;
+  }
+  
+  /* main  */
+  #main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* sidemenu bar */
+  .leftside {
+    width: 25%;
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    padding: 1.5vw;
+  }
+  
+  .leftside .card {
+    width: 22vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px groove #fff;
+    text-align: center;
+  }
+  
+  .leftside .card:hover {
+    border: 1px groove #27e287;
+    box-shadow: 0 0 8px #27e287;
+  }
+  
+  .card img {
+    width: 100%;
+    max-width: 180px;
+    height: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px groove #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px #fff;
+  }
+  .card h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    color: #fff;
+    padding-top: 1.5vw;
+  }
+  
+  .card h1:hover {
+    border-bottom: 1px solid #27e287;
+  }
+  
+  .card p {
+    color: #999;
+    font-size: 1.3rem;
+    padding: 1vw 1.3vw 1.5vw 1.3vw;
+  }
+  
+  .card .socialicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5vw;
+  }
+  
+  .card .socialicon a {
+    border-radius: 50%;
+    width: 4vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-weight: 900;
+    color: #999;
+    transition: transform ease-in-out 0.3s;
+  }
+  
+  .socialicon a:hover {
+    color: #27e287;
+    border: 1.5px solid #27e287;
+    transform: scale(1.1);
+  }
+  
+  .card .resume {
+    color: #1f1f1f;
+    background: #27e287;
+    font-size: 1.5vw;
+    border: 1px groove #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5vw 4vw;
+    margin-top: 1vw;
+  }
+  
+  .card .resume:hover {
+    color: #27e287;
+    background-color: #fff;
+  }
+  
+  .box {
+    padding: 8vw 5vw;
+    border-color: black;
+  }
+  
+  /* rightside bar */
+  .rightside {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .rightside button {
+    color: #fff;
+    background-color: #1f1f1f;
+    font-size: 1.5vw;
+    padding: 0.2vw 1vw;
+    border: 1px solid #565656;
+    border-radius: 10px;
+    margin-bottom: 3vw;
+  }
+  
+  .rightside button:hover {
+    color: #1f1f1f;
+    text-decoration: underline #27e287 2px;
+    border-bottom: 1px solid #27e287;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ffffff6b;
+  }
+  
+  .rightside h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    color: #fff;
+    padding: 1vw 0;
+  }
+  
+  .rightside span {
+    color: #27e287;
+  }
+  
+  .rightside h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #ebebeb;
+    padding: 0.6vw 0;
+  }
+  
+  .rightside h3 {
+    font-size: 2.3rem;
+    font-weight: 100;
+    color: #ecececf1;
+    padding: 0.6vw 0;
+  }
+  .rightside h4 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: #ecececf1;
+    padding: 0.6vw 0;
+  }
+  
+  .rightside p {
+    font-size: 1.2rem;
+    font-weight: 10;
+    color: #999;
+    text-align: justify;
+    padding: 0.6vw 0;
+    word-spacing: 1px;
+  }
+  
+  .symbol {
+    font-size: 6vw;
+    padding-right: 20vw;
+  }
+  
+  .portcard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
+  .project-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: rgba(41, 41, 41, 0.377);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-item video {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+  }
+  
+  .project-info {
+    padding: 15px;
+  }
+  
+  .project-info h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .project-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #27e287;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+  .project-link:hover {
+    background-color: #1da667;
+  }
+  
+  
+  .rightside .con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    text-align: center;
+    padding-top: 3vw;
+  }
+  
+  .rightside .con h4 {
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 30px;
+    border: 2px solid #333;
+    text-align: center;
+  }
+  
+  .rightside .con h4:hover {
+    color: #27e287;
+    border: 2px solid #27e287;
+    box-shadow: 0 0 5px #27e287;
+  }
+  
+  .rightside .con p {
+    font-size: 1.2rem;
+    color: #999;
+    text-align: center;
+  }
+  
+  .rightside .boxform {
+    margin: 5vw 3vw;
+    border-radius:2vw;
+    border: 1px groove #1da667;
+    padding: 1vw 3vw;
+  }
+  
+  .rightside .boxform .formbox label {
+    display: block;
+    font-size: 1.5vw;
+    color: #999;
+    margin-bottom: 1vw;
+  }
+  
+  .rightside .boxform .formbox {
+    margin-bottom: 1vw;
+  }
+  
+  .rightside .boxform button {
+    background: #27e287;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+  
+  .rightside .boxform .formbox input,
+  .rightside .boxform .formbox textarea {
+    width: 100%;
+    padding: 0.5vw;
+    border: 1px solid #27e287;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+  }
+  
+  .go {
+    text-align: right; /* padding-top:200px; */
+  }
+  .go a {
+    color: #27e287;
+    font-size: large;
+    text-decoration: none;
+  }
+  
+  /* night mode  */
+  .night-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  .night-mode nav {
+    background-color: white;
+    border-bottom: 1px solid #1f1f1f;
+  }
+  
+  .night-mode nav a {
+    background-color: white;
+    color: #1f1f1f;
+    font-weight: 500;
+  }
+  
+  .night-mode .leftside .card {
+    background-color: white;
+    border: 2px groove black;
+  }
+  
+  .night-mode .card img {
+    border: 1px groove #000000;
+  }
+  
+  .night-mode .card img:hover {
+    box-shadow: 0 0 8px #000000;
+  }
+  .night-mode .card h1 {
+    color: black;
+  }
+  
+  .night-mode .card p {
+    color: #222222;
+  }
+  
+  .night-mode .card .socialicon a {
+    color: #272727;
+  }
+  
+  .night-mode .card p {
+    color: #252525;
+  }
+  
+  .night-mode .card .socialicon a {
+    color: #222222;
+  }
+  
+  .night-mode footer {
+    background-color: white;
+  }
+  
+  .night-mode .card .resume {
+    color: #222222;
+    background-color: #27e287;
+  }
+  
+  .night-mode .card .resume:hover {
+    color: #27e287;
+    background-color: #222222;
+  }
+  
+  .night-mode .rightside button {
+    color: #000000;
+    background-color: #fff;
+  }
+  
+  .night-mode .rightside button:hover {
+    color: #fff;
+    text-decoration: underline #27e287 2px;
+    border-bottom: 1px solid #27e287;
+    background-color: #222222;
+    box-shadow: 0 0 5px #333;
+  }
+  
+  .night-mode .rightside h1 {
+    color: black;
+  }
+  
+  .night-mode .rightside span {
+    color: #27e287;
+  }
+  
+  .night-mode .rightside h2 {
+    color: #222222;
+  }
+  
+  .night-mode .rightside h3 {
+    color: #272727;
+  }
+  .night-mode .rightside h3 i {
+    color: #272727;
+  }
+  .night-mode .rightside h4 {
+    color: #252525;
+  }
+  
+  .night-mode .rightside p {
+    color: #333;
+  }
+  
+  .night-mode .rightside .boxform .formbox label {
+    color: #272727;
+  }
+  
+  .night-mode .rightside .boxform button {
+    background: #27e287;
+    color: black;
+  }
+  
+  .night-mode .project-item {
+    background: #505050;
+    border: 1px solid #000000;
+  }
+  
+  .night-mode .project-info h4 {
+    color: #fff;
+  }
+  
+  .night-mode .project-info p {
+    color: #999;
+  }
+  
+  /* Responsive Screeen */
+  @media (max-width: 1200px) {
+    #main {
+      padding: 10px;
+      display: block;
+    }
+    nav .menu {
+      gap: 2vw;
+      padding: 1.5vw;
+      padding-left: 3vw;
+    }
+    nav h1 {
+      font-size: 1.9rem;
+    }
+    .leftside {
+      width: 100%;
+      height: 85vh;
+      position: relative;
+      border-right: none;
+      border-left: none;
+      margin: auto;
+    }
+  
+    .leftside .card {
+      width: 40vw;
+      height: 80vh;
+      position: relative;
+      margin: auto;
+    }
+  
+    .card img {
+      max-width: 250px;
+    }
+  
+    .card h1 {
+      font-size: 4vw;
+    }
+  
+    .card p {
+      font-size: 2vw;
+    }
+  
+    .card .socialicon {
+      text-align: center;
+      align-items: center;
+    }
+  
+    .card .socialicon a {
+      width: 8vw;
+      height: 10vh;
+      font-size: 2vw;
+      text-align: center;
+    }
+  
+    .card .socialicon i {
+      font-size: 4vw;
+    }
+  
+    .card .resume {
+      font-size: 2.5vw;
+      padding: 0 6vw;
+    }
+  
+    .rightside {
+      width: 100%;
+      position: relative;
+      margin: auto;
+      padding: 0;
+    }
+  
+    .rightside button {
+      font-size: 2.5vw;
+    }
+  
+    .rightside h1 {
+      font-size: 6vw;
+    }
+  
+    .rightside h2 {
+      font-size: 4vw;
+    }
+  
+    .rightside h3 {
+      font-size: 3vw;
+    }
+  
+    .rightside p {
+      font-size: 2vw;
+    }
+  
+    .rightside .con p {
+      font-size: 1.7vw;
+      color: #999;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #main {
+      padding: 10px;
+      display: block;
+    }
+  
+    nav h1 {
+      font-size: 5vw;
+    }
+    nav .menu {
+      flex-direction: column;
+      background-color: #27e288b4;
+      padding: 5px 30px;
+      position: absolute;
+      right: 24px;
+      top: 33px;
+      display: none;
+    }
+  
+    nav .menu span {
+      display: block;
+      color: #fff;
+      font-size: 6vw;
+      cursor: pointer;
+    }
+    nav .menu p {
+      font-size: 2vw;
+    }
+  
+    nav i {
+      display: block;
+      font-size: 5vw;
+      font-weight: 700;
+      color: #27e287;
+      cursor: pointer;
+    }
+  
+    .leftside {
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      border-right: none;
+      border-left: none;
+      margin: auto;
+    }
+  
+    .leftside .card {
+      width: 52vw;
+      height: 77vh;
+      position: relative;
+      margin: auto;
+      padding: 3vw;
+    }
+  
+    .card img {
+      max-width: 155px;
+    }
+    .card .socialicon {
+      text-align: center;
+      align-items: center;
+      padding: 30px 0;
+    }
+  
+    .card .socialicon a {
+      width: 9vw;
+      height: 9vh;
+      font-size: 2vw;
+    }
+  
+    .card .socialicon i {
+      font-size: 5vw;
+    }
+  
+    .card .resume {
+      font-size: 3vw;
+      padding: 1vh 8vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #main {
+      padding: 0;
+      display: block;
+    }
+  
+    .leftside {
+      width: 100%;
+      height: 82vh;
+    }
+  
+    .leftside .card {
+      width: 65vw;
+      height: 80vh;
+      position: relative;
+      margin: auto;
+      padding: 18vw 0;
+      /* margin-top: 20vw; */
+    }
+    .card img {
+      max-width: 140px;
+      height: 50%;
+    }
+  
+    .card h1 {
+      font-size: 5vw;
+    }
+  
+    .card p {
+      font-size: 4vw;
+    }
+  
+    .card button {
+      font-size: 3vw;
+    }
+  
+    .card .socialicon {
+      border-radius: 0;
+      border: none;
+    }
+  
+    .card .socialicon i {
+      font-size: 5vw;
+      font-weight: 800;
+      text-align: center;
+    }
+  
+    .card .socialicon a {
+      height: 8vh;
+      width: 16vw;
+      font-size: 2vw;
+    }
+  
+    .card .resume {
+      font-size: 3.5vw;
+      border-radius: 10px;
+      padding: 1vw 7vw;
+    }
+  
+    .rightside {
+      width: 100%;
+      position: relative;
+      margin: auto;
+      padding: 3vw;
+    }
+  
+    .rightside button {
+      font-size: 4vw;
+      padding: 1.5vw;
+      margin-bottom: 8vw;
+    }
+  
+    .rightside h1 {
+      font-size: 7vw;
+      padding-bottom: 3vw;
+    }
+  
+    .rightside h2 {
+      font-size: 6vw;
+      padding-bottom: 3vw;
+    }
+  
+    .rightside h3 {
+      font-size: 5vw;
+      padding-bottom: 3vw;
+    }
+  
+    .rightside p {
+      font-size: 4vw;
+      text-align: justify;
+    }
+  
+    .portcard {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  
+    .rightside .con {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .rightside .con h3 {
+      font-size: 6vw;
+    }
+  
+    .rightside .con h3 p {
+      font-size: 3vw;
+    }
+    .rightside .boxform .formbox label {
+      font-size: 3vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .box {
+      padding: 1rem;
+      padding-block: 3.5rem;
+    }
+  
+    nav h1 {
+      font-size: 6vw;
+    }
+  
+    nav i {
+      font-size: 7vw;
+    }
+    /* .leftside {
+      width: 100%;
+      height: 80vh;
+    } */
+    .leftside .card {
+      width: 80vw;
+      height: 75vh;
+      margin: auto;
+      /* padding: 3vw; */
+    }
+    .card img {
+      max-width: 160px;
+    }
+  
+    .card h1 {
+      font-size: 7vw;
+    }
+  
+    .card p {
+      font-size: 5vw;
+    }
+  
+    .card button {
+      font-size: 5vw;
+    }
+  
+    .card .resume {
+      margin: 0;
+      font-size: 5vw;
+    }
+  
+    .rightside .con {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  
+    .rightside .con h3 {
+      font-size: 10vw;
+    }
+  
+    .rightside .con p {
+      font-size: 4vw;
+    }
+  
+    .rightside .boxform .formbox label {
+      font-size: 4vw;
+    }
+  }
+  
+  #night-mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #night-mode-icon {
+    transition: color 0.3s;
+  }
+  
+  .night-mode #night-mode-icon {
+    color: yellow;
+  }
+  
